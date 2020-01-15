@@ -1,4 +1,4 @@
-package java.algorithm;
+package com.iluwatar.algorithm;
 
 import java.util.Arrays;
 
@@ -19,11 +19,11 @@ public class SelectionSort implements IArraySort {
     public int[] sort(int[] sortArray) {
         int[] arr = Arrays.copyOf(sortArray, sortArray.length);
 
-        for (int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length-1; i++){
             int min = i;
 
             for (int j = i+1; j < arr.length; j++){
-                if (arr[j] < arr[i]){
+                if (arr[j] < arr[min]){
                     min = j;
                 }
             }

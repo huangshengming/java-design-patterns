@@ -1,4 +1,4 @@
-package java.algorithm;
+package com.iluwatar.algorithm;
 
 public interface IArraySort {
 
